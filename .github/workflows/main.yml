@@ -46,8 +46,8 @@ jobs:
       - name: Set Password for runneradmin
         run: |
           $user = Get-LocalUser -Name "runneradmin"
-          if ($user.Enabled -eq $false) { Enable-LocalUser -Name "runneradmin" }
-          $secPass = ConvertTo-SecureString "P@ssw0rd!" -AsPlainText -Force
+          if ($user.Enabled -eq $false) { Enable-LocalUser -Name "rexsislegit" }
+          $secPass = ConvertTo-SecureString "shayan000@" -AsPlainText -Force
           Set-LocalUser -Name "runneradmin" -Password $secPass
       - name: Start ngrok TCP tunnel (RDP port)
         run: |
